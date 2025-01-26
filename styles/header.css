@@ -1,18 +1,17 @@
 .header {
   display: flex;
   justify-content: space-between;
-  height: 55px;
+  height: 60px;
   position: fixed;
   top: 0px;
   left: 0px;
   right: 0px;
   background-color: white;
   z-index: 100;
-  
+  align-items: center;
   /* Add white shadow to the bottom */
   box-shadow: 0 5px 10px rgba(255, 255, 255, 0.9);
 }
-
 
 .left-section{
   /* background-color: lightblue; */
@@ -24,33 +23,35 @@
   justify-content: space-around;
 }
 
-
 .logo {
   height: 70px;
   margin-top: 10px; /* Adjust the value to move the image down */
 }
 
 .middle-section{
-  /* background-color: lightpink; */
-  /* margin-left: 75px; */
-  /* margin-right: 35px; */
-  flex: 1;
-  max-width:470px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin: 0 10px; /* Space out buttons */
+  opacity: 1;
+  transition: opacity 0.29s ease; /* Smooth fade transition */
+}
+
+/* Hide buttons when screen width is below 768px */
+@media (max-width: 768px) {
+  .middle-section button {
+    opacity: 0; /* Fade out the buttons */
+    pointer-events: none; /* Optional: Disable button interactions */
+  }
 }
 
 .middle-button{
   margin-left: 5px;
   margin-right: 5px;
-  font-weight: medium;
-  font-size: 10px;
-  height: 30px;
+  font-weight: bold;
+  font-size: 12px;
+  height: 34px;
   padding-left: 15px;
   padding-right: 15px;
   color: black;
-  background-color: rgb(235, 235, 235);
+  background-color: rgb(240, 240, 240);
   border: none;
   border-radius: 17px;
 }
@@ -66,9 +67,9 @@
 }
 
 .contactus-button{
-  font-size: 10px;
+  font-size: 12px;
   font-weight: bold;
-  height: 30px;
+  height: 34px;
   padding-left: 15px;
   padding-right: 15px;
   color: white;

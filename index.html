@@ -29,7 +29,8 @@
 
     <div class="middle-section">
       <!-- Add anchor links to jump to sections -->
-      <a href="#section-one"><button class="middle-button">Home</button></a> <!-- Link to section-one -->
+      <a href="#section-one"><button id="homeButton" class="middle-button">Home</button></a>
+ <!-- Link to section-one -->
       <a href="#section-two"><button class="middle-button">About</button></a> <!-- Link to section-two -->
       <a href="#section-two"><button class="middle-button">Services</button></a> <!-- Link to section-two -->
     </div>
@@ -74,7 +75,12 @@
   </div>
 
   <script>
+    window.onload = function() {
+      // Automatically click the Home button after page load
+      document.getElementById('homeButton').click();
+    };
   </script>
+  
 
 
 </body>

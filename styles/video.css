@@ -46,7 +46,7 @@
 }
 
 .image {
-  max-width: 60%;
+  max-width: 70%;
   height: auto;
   margin-top: 20px;
   border-radius: 20px;
@@ -65,8 +65,7 @@
 /* Media query for small screens */
 @media (max-width: 768px) {
   .section-two-grid {
-    grid-template-columns: 1fr; /* Change to a single column */
-    /* Optionally, you can reduce the height here if you want it to adjust as well */
+    grid-template-columns: 1fr;
     height: auto;
   }
 }
