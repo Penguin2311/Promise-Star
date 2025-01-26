@@ -1,0 +1,78 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  height: 55px;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  background-color: white;
+  z-index: 100;
+  
+  /* Add white shadow to the bottom */
+  box-shadow: 0 5px 10px rgba(255, 255, 255, 0.9);
+}
+
+
+.left-section{
+  /* background-color: lightblue; */
+  margin-left: 10px;
+  width: 180px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+
+.logo {
+  height: 70px;
+  margin-top: 10px; /* Adjust the value to move the image down */
+}
+
+.middle-section{
+  /* background-color: lightpink; */
+  /* margin-left: 75px; */
+  /* margin-right: 35px; */
+  flex: 1;
+  max-width:470px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.middle-button{
+  margin-left: 5px;
+  margin-right: 5px;
+  font-weight: medium;
+  font-size: 10px;
+  height: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: black;
+  background-color: rgb(235, 235, 235);
+  border: none;
+  border-radius: 17px;
+}
+
+.right-section{
+  /* background-color: lightblue; */
+  width: 180px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+
+.contactus-button{
+  font-size: 10px;
+  font-weight: bold;
+  height: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: white;
+  background-color: rgb(19, 19, 19);
+  border: none;
+  border-radius: 17px;
+}

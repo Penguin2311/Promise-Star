@@ -1,0 +1,93 @@
+.section-one {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically */
+  border-radius: 20px;
+  text-align: center; /* Center text inside div */
+  padding: 20px; /* Optional: Adds space around the content */
+  /* background-color: rgb(235, 235, 235); */
+}
+
+.section-two {
+  margin-top: 60px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically */
+  border-radius: 20px;
+  text-align: center; /* Center text inside div */
+  padding: 20px; /* Optional: Adds space around the content */
+  /* background-color: rgb(235, 235, 235); */
+  background-color: rgb(235, 235, 235);
+}
+
+.heading-div{
+  margin-top: 10px;
+}
+
+.heading{
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  /* margin-bottom: 20px; */
+}
+
+.sub-heading-div{
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.sub-heading{
+  text-align: center;
+  font-size: 15px;  
+}
+
+.image {
+  max-width: 60%;
+  height: auto;
+  margin-top: 20px;
+  border-radius: 20px;
+}
+
+.section-two-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  align-content: center;
+  align-items: center;
+  justify-items: center;
+  gap: 20px; /* Optional: Adds space between grid items */
+  height: auto; /* Optional: Ensures the container has enough height */
+}
+
+/* Media query for small screens */
+@media (max-width: 768px) {
+  .section-two-grid {
+    grid-template-columns: 1fr; /* Change to a single column */
+    /* Optionally, you can reduce the height here if you want it to adjust as well */
+    height: auto;
+  }
+}
+
+
+
+
+/* 
+.background-image {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: 300px;
+  width: 90%;
+  transition: transform 0.5s ease;
+  border-radius: 20px;
+}
+
+.background-image:hover {
+  transform: scale(1.1); /* Zoom in slightly on hover */
+/* } */ 
+
+.demo-div{
+  height: 40px;
+}
