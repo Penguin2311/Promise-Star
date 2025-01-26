@@ -6,6 +6,7 @@
 .section-one {
   background-color: rgb(255, 255, 255);
   display: flex;
+  height: auto;
   flex-direction: row-reverse;
   align-items: center;
   justify-content: center;
@@ -61,10 +62,9 @@
   text-align: left;
   top: 40px; 
   left: 40px;
-  font-size: 38px;
+  font-size: clamp(20px, 5vw, 38px);
   color: rgb(0, 0, 0);
   font-weight: bold;
-  
 }
 
 .overlay-text-two{
@@ -74,9 +74,10 @@
   word-spacing: 6px;
   row-gap: 10px;
   text-align: left;
-  width: 40%;
+  max-width: 40%;
+  min-width: 10%;
   color: rgb(73, 73, 73);
-  font-size: 14px;
+  font-size: clamp(2px, 3vw, 14px);
 
 }
 

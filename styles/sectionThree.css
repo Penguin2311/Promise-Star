@@ -4,34 +4,121 @@ body {
   background-color: #ffffff;
 }
 
-.section-three{
-  height: 500px;
-  width: 100%;
-  background-color: gray;
+.section-three {
+  margin-top: 60px;
+  height: 600px;
+  /* width: 100%; */
+  /* background-color: gray; */
   /* padding: 20px; */
   display: flex;
   flex-direction: row;
-
+  border-radius: 20px;
+  gap: 20px;
+  overflow: hidden;
 }
 
-.div-one{
-background-color: lightblue;
-height: 300px;
-width: 30%;
+.left {
+  /* padding: 20px; */
+  /* flex-grow: 0.4; */
+  height: 100%;
+  width: 40%;
+  /* background-color: lightblue; */
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  overflow: hidden;
+  box-sizing: border-box; /* Ensures padding is included in height/width */
 }
-.div-two{
-  background-color: lightpink;
-  height: 200px;
-  width: 30%;
+
+.right {
+  /* padding: 20px; */
+  height: 100%;
+  width: 60%;
+  /* background-color: lightpink; */
+  border-radius: 20px;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+
+  /* box-sizing: border-box; */
+}
+
+.div-one {
+  padding: 20px;
+  background-color: rgb(235, 235, 235);
+  height: 55%;
+  width: 100%;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  border-radius: 20px;
+  transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), 
+  background-color 0.3s ease, 
+  box-shadow 0.3s ease;
+}
+
+.div-one:hover {
+  transform: scale(0.98); /* Makes the div slightly smaller */
+  background-color: rgb(245, 245, 245); /* Slightly lighter background */
+  box-shadow: inset 1px 4px 20px rgba(0, 0, 0, 0.2); /* Inset shadow from all sides */
+}
+
+
+
+.div-two {
+  padding: 20px;
+  background-color: rgb(235, 235, 235);;
+  height: 42%;
+  width: 100%;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  border-radius: 20px;
+  transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), 
+  background-color 0.3s ease, 
+  box-shadow 0.3s ease;
+}
+
+.div-two:hover {
+  transform: scale(0.98); /* Makes the div slightly smaller */
+  background-color: rgb(245, 245, 245); /* Slightly lighter background */
+  box-shadow: inset 1px 4px 20px rgba(0, 0, 0, 0.2); /* Inset shadow from all sides */
 }
 
 .div-three{
-  background-color: lightblue;
-  height: 300px;
-  width: 30%;
-  }
-  .div-four{
-    background-color: lightpink;
-    height: 200px;
-    width: 30%;
-  }
+  padding: 20px;
+  background-color: rgb(235, 235, 235);;
+  height: 42%;
+  width: 100%;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  border-radius: 20px;
+  transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), 
+  background-color 0.3s ease, 
+  box-shadow 0.3s ease;
+}
+
+.div-three:hover {
+  transform: scale(0.98); /* Makes the div slightly smaller */
+  background-color: rgb(245, 245, 245); /* Slightly lighter background */
+  box-shadow: inset 1px 4px 20px rgba(0, 0, 0, 0.2); /* Inset shadow from all sides */
+}
+
+.div-four{
+  padding: 20px;
+  background-color: rgb(235, 235, 235);;
+  height: 55%;
+  width: 100%;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  border-radius: 20px;
+  transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), 
+  background-color 0.3s ease, 
+  box-shadow 0.3s ease;
+}
+
+.div-four:hover {
+  transform: scale(0.98); /* Makes the div slightly smaller */
+  background-color: rgb(245, 245, 245); /* Slightly lighter background */
+  box-shadow: inset 1px 4px 20px rgba(0, 0, 0, 0.2); /* Inset shadow from all sides */
+}
+

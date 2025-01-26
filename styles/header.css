@@ -25,7 +25,12 @@
 
 .logo {
   height: 70px;
-  margin-top: 10px; /* Adjust the value to move the image down */
+  margin-top: 10px;
+  transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), background-color 0.3s ease;
+}
+
+.logo:hover{
+  transform: scale(1.1);
 }
 
 .middle-section{
@@ -60,7 +65,7 @@
 .middle-button:hover {
   /* color: black; */
   /* background-color: rgb(230, 230, 230); */
-  transform: scale(1.13);
+  transform: scale(1.1);
 }
 
 .middle-button:active {
