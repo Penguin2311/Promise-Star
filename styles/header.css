@@ -54,7 +54,26 @@
   background-color: rgb(240, 240, 240);
   border: none;
   border-radius: 17px;
+  transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), background-color 0.3s ease;
 }
+
+.middle-button:hover {
+  /* color: black; */
+  /* background-color: rgb(230, 230, 230); */
+  transform: scale(1.13);
+}
+
+.middle-button:active {
+  color: black;
+  background-color: rgb(200, 200, 200);
+  transform: scale(1.13);
+}
+
+/* .middle-button:active {
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+  transform: scale(1.05);
+} */
 
 .right-section{
   /* background-color: lightblue; */
@@ -76,4 +95,17 @@
   background-color: rgb(19, 19, 19);
   border: none;
   border-radius: 17px;
+  transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), background-color 0.3s ease;
+}
+
+.contactus-button:hover {
+  color: black;
+  background-color: rgb(230, 230, 230);
+  transform: scale(1.05);
+}
+
+.contactus-button:active {
+  color: black;
+  background-color: rgb(210, 210, 210);
+  transform: scale(1.05);
 }
