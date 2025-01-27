@@ -9,11 +9,14 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+    rel="stylesheet">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
 
   <link rel="stylesheet" href="styles/general.css">
   <link rel="stylesheet" href="styles/header.css">
@@ -21,10 +24,9 @@
   <link rel="stylesheet" href="styles/sectionOne.css">
   <link rel="stylesheet" href="styles/sectionTwo.css">
   <link rel="stylesheet" href="styles/sectionThree.css">
+  <link rel="stylesheet" href="styles/sectionFour.css">
 
-</head>
 
-<body>
   <div class="header">
     <div class="left-section">
       <a href="#section-one"><img class="logo" src="icons/image.png" alt="Logo"></a>
@@ -32,30 +34,36 @@
 
     <div class="middle-section">
       <a href="#section-one"><button id="homeButton" class="middle-button">Home</button></a>
-      <a href="#section-two"><button class="middle-button">About</button></a>
+      <a href="#section-two"><button class="middle-button">Partners</button></a>
       <a href="#section-three"><button class="middle-button">Services</button></a>
+      <a href="#section-four"><button class="middle-button">About Us</button></a>
     </div>
-    
+
     <div class="right-section">
       <button class="contactus-button">Contact Us</button>
     </div>
   </div>
 
-  <!-- Correct the typo here (sction -> section) -->
-   <div id="section-one" class="demo-div">
-   </div>
+</head>
+
+<body>
+
+  <div id="section-one" class="demo-div"></div>
 
   <div class="view">
     <div class="section-one block">
       <div class="image-container">
         <div class="translucent-background">
-          <h1 class="overlay-text">Promise Star Global Services LTD</h1>
-          <p class="overlay-text-two overlay-text">A wholly Nigerian-owned engineering and technical services provider, specializing in Renewable Energy Technologies, industrial plants, and facilities. Our focus is on delivering innovative, sustainable, and high-quality solutions that meet the growing demand for renewable energy and infrastructure development across key sectors. We are committed to driving the transition to greener energy while maintaining operational excellence in industrial projects</p>
+          <div class="texts">
+            <h1 class="overlay-text">Promise Star Global Services LTD</h1>
+            <h6 class="overlay-text-two">We specialize in renewable energy and industrial plant solutions.</h6>
+            <a href="#section-two"><button class="section-one-button">Learn more</button></a>
+          </div>
         </div>
-          
+
       </div>
-  </div>
-  
+    </div>
+
 
     <div id="section-two" class="demo-div"></div>
 
@@ -75,22 +83,47 @@
 
 
     <div class="section-three block">
+        <div class="section-three-child">div 1</div>
+        <div class="section-three-child">div 2</div>
+        <div class="section-three-child">div 3</div>
+        <div class="section-three-child">div 4</div>
 
-        <div class="left block">
-          <div class="div-one ">div 1</div>
-          <div class="div-two ">div 2</div>
+    </div>
+
+    <div id="section-four" class="demo-div"></div>
+
+    <div class="section-four">
+      <p class="heading">About Us</p>
+      <div class="section-four-grid">
+        <div class="section-four-grid-child child-one">
+          <h2>Vision</h2>
+          <p>• Embracing cutting-edge technologies like AI, automation</p>
+          <p>• Focusing always on customer satisfaction</p>
+          <p>• Adhering to ethical and environmental standards</p>
+          <p>• Promoting and rewarding based on merit</p>
         </div>
-
-        <div class="right block">
-          <div class="div-three ">div 3</div>
-          <div class="div-four ">div 4</div>
-          </div>
+        <div class="section-four-grid-child child-three">
+          <h2>Mission Statement</h2>
+          <p>
+            Our companies aim to provide value through precision engineering, sustainable practices, and customer-focused approaches, enhancing safety, efficiency, and functionality across projects in Africa and beyond</p>
+        </div>
+        <div class="section-four-grid-child child-two">
+          <h2>LMao</h2>
+          <p>Our companies aim to provide value through precision engineering, sustainable practices, and customer-focused approaches, enhancing safety, efficiency, and functionality across projects in Africa and beyond</p>
+        </div>
+        <div class="section-four-grid-child child-four">
+          <h2>LMao</h2>
+          <p>Our companies aim to provide value through precision engineering, sustainable practices, and customer-focused approaches, enhancing safety, efficiency, and functionality across projects in Africa and beyond</p>
+        </div>
+      </div>
     </div>
 
 
-  <script src="script.js"></script>
-  
 
+  </div>
+  </div>
+
+  <script src="script.js"></script>
 
 </body>
 
