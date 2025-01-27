@@ -1,0 +1,12 @@
+.section-services {
+  display: flex;
+  justify-content: space-around;
+  column-gap: 10px;
+  text-align: center;
+}
+
+.section-services-child {
+  background-color: gray;
+  flex: 1; /* Equal width for all children */
+  margin: 10px; /* Optional: Adds some space between cards */
+}

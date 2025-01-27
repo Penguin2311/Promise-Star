@@ -1,5 +1,5 @@
 .section-two {
-  margin-top: 40px;
+  margin-top: 60px;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -23,6 +23,8 @@
   transform: scale(1.13);
   cursor: pointer;
 }
+
+
 
 .section-two-grid {
   display: grid;
