@@ -1,12 +1,22 @@
 .section-services {
   display: flex;
   justify-content: space-around;
-  column-gap: 10px;
+  /* column-gap: 10px; */
   text-align: center;
 }
 
 .section-services-child {
   background-color: gray;
   flex: 1; /* Equal width for all children */
-  margin: 10px; /* Optional: Adds some space between cards */
+ /* Optional: Adds some space between cards */
+  border-right: 2px solid black; /* Adds a right border */
+}
+
+
+.list-heading{
+  font-family: Nunito;
+}
+
+.list-div p {
+  margin-bottom: 10px;
 }
