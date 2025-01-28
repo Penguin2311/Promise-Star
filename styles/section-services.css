@@ -1,22 +1,77 @@
 .section-services {
   display: flex;
-  justify-content: space-around;
-  /* column-gap: 10px; */
+  flex-wrap: wrap; /* Allows items to wrap to the next line */
+  justify-content: center; /* Centers items horizontally */
+  gap: 20px; /* Adds space between items */
+}
+
+.section-services > div {
+  flex: 1 1 300px; /* Ensures items take up a minimum of 300px and can grow */
+  max-width: 100%; /* Prevents items from growing too large */
+  background-color: rgb(240, 240, 240);
+  border-radius: 20px;
+}
+
+
+.section-services-left{
+  background-color: rgb(240, 240, 240);
+  border-radius: 20px;
+  flex: 1;
+  max-width: auto;
+}
+
+.section-services-left img {
+  height: 250px;
+  width: 100%;
+  border-radius: 20px;
+  background-position: top;
+}
+
+.section-services-middle{
+  background-color: rgb(240, 240, 240);
+  border-radius: 20px;
+  flex: 1;
+  /* max-width: 320px; */
+  padding-bottom: 10px;
+}
+
+.section-services-middle img {
+  height: 250px;
+  width: 100% ;
+  border-radius: 20px;
+  background-position: top;
+}
+
+.section-services-right{
+  background-color: rgb(240, 240, 240);
+  border-radius: 20px;
+  flex: 1;
+  /* max-width: 320px; */
+  padding-bottom: 20px;
+}
+
+.section-services-right img {
+  height: 250px;
+  width: 100% ;
+  border-radius: 20px;
+  background-position: top;
+}
+.list-div h1{
   text-align: center;
+  font-family: Nunito;
+  font-size: 40px;
+  margin-top: 40px;
 }
 
-.section-services-child {
-  background-color: gray;
-  flex: 1; /* Equal width for all children */
- /* Optional: Adds some space between cards */
-  border-right: 2px solid black; /* Adds a right border */
-}
-
-
-.list-heading{
+.list-div h2{
+  text-align: center;
   font-family: Nunito;
 }
 
 .list-div p {
-  margin-bottom: 10px;
+  text-align: center;
+  padding: 6px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 20px;
 }

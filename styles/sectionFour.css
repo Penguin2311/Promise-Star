@@ -35,6 +35,11 @@
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
+.section-four-grid-child:active {
+  transform: scale(1.03);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
 .child-one{
   background: linear-gradient(to bottom, rgb(194,187,248), rgb(222,218,245));
   color: rgb(89, 47, 129);
@@ -42,19 +47,19 @@
 }
 
 .child-two{
-  background: linear-gradient(to bottom, rgb(189,209,250), rgb(216,224,245));
+  background: linear-gradient(to bottom, rgb(189,205,250), rgb(220,224,245));
   color: rgb(65, 96, 176);
   font-family: Nunito;
 }
 
 .child-three{
-  background: linear-gradient(to bottom, rgb(240,224,191), rgb(250,235,218));
+  background: linear-gradient(to bottom, rgb(246,220,189), rgb(250,235,219));
   color: rgb(190, 92, 17);
   font-family: Nunito;
 }
 
 .child-four{
-  background: linear-gradient(to bottom, rgb(241, 188, 190), rgb(242,218,215));
+  background: linear-gradient(to bottom, rgb(245, 188, 189), rgb(245,218,215));
   color: rgb(208, 92, 96);
   font-family: Nunito;
 }
