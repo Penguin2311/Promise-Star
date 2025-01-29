@@ -18,6 +18,18 @@
   border-radius: 20px;
   flex: 1;
   max-width: auto;
+  padding-bottom: 30px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.section-services-left:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.section-services-left:active {
+  transform: scale(1.01);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .section-services-left img {
@@ -31,8 +43,18 @@
   background-color: rgb(240, 240, 240);
   border-radius: 20px;
   flex: 1;
-  /* max-width: 320px; */
-  padding-bottom: 10px;
+  padding-bottom: 30px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.section-services-middle:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.section-services-middle:active {
+  transform: scale(1.01);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .section-services-middle img {
@@ -47,7 +69,18 @@
   border-radius: 20px;
   flex: 1;
   /* max-width: 320px; */
-  padding-bottom: 20px;
+  padding-bottom: 30px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.section-services-right:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.section-services-right:active {
+  transform: scale(1.01);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .section-services-right img {
@@ -61,6 +94,7 @@
   font-family: Nunito;
   font-size: 40px;
   margin-top: 40px;
+  padding: 20px;
 }
 
 .list-div h2{
