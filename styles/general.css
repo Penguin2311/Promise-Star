@@ -1,7 +1,7 @@
 p {
   font-family: Nunito;
   margin-top: 0;
-  margin-bottom: 0;
+  /* margin-bottom: 50px; */
 }
 
 body{
@@ -10,7 +10,7 @@ body{
   padding-top: 70px;
   padding-left: 50px;
   padding-right: 50px;
-  margin-bottom: 2050px;
+  /* margin-bottom: 2050px; */
 }
 
 button{
