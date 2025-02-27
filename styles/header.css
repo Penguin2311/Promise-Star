@@ -1,16 +1,15 @@
 .header {
   display: flex;
   justify-content: space-between;
-  height: 60px;
-  position: fixed;
+  height: 4rem;
+  position: sticky;
   top: 0px;
   left: 0px;
   right: 0px;
-  background-color: white;
+  background-color: rgb(232, 232, 232);
   z-index: 100;
   align-items: center;
-  /* Add white shadow to the bottom */
-  box-shadow: 0 5px 10px rgba(255, 255, 255, 0.9);
+  border-bottom: 1px solid rgb(170, 170, 170);
 }
 
 .left-section{

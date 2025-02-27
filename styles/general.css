@@ -6,11 +6,7 @@ p {
 
 body{
   margin: 0;
-  padding-top: 20px;
-  padding-top: 70px;
-  padding-left: 50px;
-  padding-right: 50px;
-  /* margin-bottom: 2050px; */
+  margin-left: 0px;
 }
 
 button{
@@ -20,22 +16,6 @@ button{
 
 html {
   scroll-behavior: smooth;
-}
-
-@keyframes appear {
-  from{opacity: 0;
-  scale: 0.5;
-}
-to{
-  opacity: 1;
-  scale: 1;
-}
-}
-
-.block{
-  animation: appear 5s linear;
-  animation-timeline: view();
-  animation-range: entry 0 cover 30%;
 }
 
 .demo-div{

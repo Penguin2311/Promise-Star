@@ -1,21 +1,20 @@
-
 .section-one {
-  background-color: rgb(255, 255, 255);
-  /* display: flex; */
-  height: auto;
-  flex-direction: row-reverse;
-  align-items: center;
-  justify-content: center;
-  border-radius: 20px;
+  display: flex;
+  height: 500px;
+  width: 100%;
   text-align: center;
-  margin-top: 20px;
+  background-image: url("../icons/sectionOneImage.JPEG");
+  background-position: top;
+  background-position-x: right;
+  background-size: 150%;
+  scroll-margin-top: 6rem;
 }
 
-.heading-div{
+.heading-div {
   margin-top: 10px;
 }
 
-.heading{
+.heading {
   color: rgb(52, 52, 52);
   text-align: center;
   font-size: 30px;
@@ -24,98 +23,57 @@
   /* margin-bottom: 20px; */
 }
 
-.sub-heading-div{
+.sub-heading-div {
   margin-top: 20px;
   margin-bottom: 10px;
 }
 
-.sub-heading{
+.sub-heading {
   text-align: center;
-  font-size: 18px;  
+  font-size: 18px;
 }
 
-/* Container for image and text */
-.image-container {
-  position: relative;
-  display: inline-block;
-  width: 100%;
-  height: 400px;
-  background-image: url("../icons/sectionOneImage.JPEG");
-  background-position: top;
-  background-position-x: right;
-  background-size: cover;
-  border-radius: 20px;
+.texts {
+  display: flex;
+  flex-grow: 1;
+  align-items:start;
+  flex-direction: column;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-left: 10%;
 }
-
-/* Image styling */
-.image {
-  width: 100%;  /* Makes the image responsive */
-  height: auto; /* Keeps the aspect ratio */
-}
-
-/* Text over the image */
-@keyframes fadeInSlide {
-  0% {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* .overlay-text::before {
-  content: url('../icons/image.png');
-  display: inline-block;
-  width: 100%;
-  height: 100%;
-  margin-right: 5px;
-} */
 
 .overlay-text {
-  font-family: Nunito;
-  font-size: clamp(20px, 5vw, 38px);
-  color: rgb(52, 52, 52);
+  margin: 0;
+  width: 600px;
+  font-family: sans-serif;
+  font-size: 60px;
+  color: rgb(255, 255, 255);
   font-weight: bold;
-  /* Initial animation */
-  opacity: 0;
-  animation: fadeInSlide 1s ease-out forwards;
-  animation-delay: 0.5s; /* Optional delay */
-  margin-bottom: 10px;
+  text-align: left;
 }
 
 .overlay-text-two {
+  width: 700px;
   font-family: Nunito;
-  row-gap: 10px;
-  color: rgb(73, 73, 73);
-  font-weight: light;
+  color: rgb(255, 255, 255);
   text-align: left;
-  margin: 0px;
+  margin: 0;
+  margin-top: 20px;
   margin-bottom: 30px;
-  opacity: 0;
-  animation: fadeInSlide 1s ease-out forwards;
-  animation-delay: 0.5s; /* Optional delay */
-  font-size: clamp(2px, 5vw, 16px); /* Responsive font size */
+  font-size: clamp(2px, 5vw, 16px);
 }
 
 
-.translucent-background{
-  background: linear-gradient(
-    to right,
-    rgb(245, 245, 245, 1) 0%,
-    rgb(245, 245, 245, 0.9 ) 40%,
-    rgba(255, 255, 255, 0) 100%
-  );
-  width: 100%;
+.translucent-background {
+  display: flex;
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, 0.7);
   height: 100%;
-  border-radius: 20px;
-  /* display: flex; */
+  width: 100%;
 }
 
-.section-one-button{
-  animation: fadeInSlide 1s ease-out forwards;
-  animation-delay: 0.5s;
+.section-one-button {
   font-family: Nunito;
   font-size: 12px;
   font-weight: bold;
@@ -126,10 +84,9 @@
   background-color: rgb(19, 19, 19);
   border: none;
   border-radius: 17px;
-  transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), background-color 0.3s ease;
 }
 
-.section-one-button:hover{
+.section-one-button:hover {
   color: black;
   background-color: rgb(230, 230, 230);
   transform: scale(1.05);
@@ -143,13 +100,37 @@
   transform: scale(1);
 }
 
-.texts{
-  /* background-color: aqua; */
-  position: absolute;
-  margin-left: 10%;
-  /* gap: -100px; */
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-  transform: translateY(60px);
+@media screen and (max-width: 768px) {
+  .section-one {
+    background-size: cover;
+    height: 100%;
+  }
+
+  .texts {
+    margin: 0;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    margin-left: 5%;
+    margin-right: 5%;
+    /* align-items: center; */
+  }
+
+  .overlay-text {
+    font-size: 5vh;
+    width: 100%;
+    max-width: 500px;
+    /* text-align: center; */
+  }
+
+  .overlay-text-two {
+    font-size: 2vh;
+    width: 100%;
+    max-width: 600px;
+    /* text-align: center; */
+  }
+
+  .translucent-background{
+    height: 100%;
+    min-height: inherit;
+  }
 }
