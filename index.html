@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Promise Star Global</title>
+  <title>Promise Star Global Services Limited</title>
   <link rel="icon" href="icons/image.png" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,6 +27,26 @@
   <link rel="stylesheet" href="styles/sectionFour.css">
   <link rel="stylesheet" href="styles/section-services.css">
   <link rel="stylesheet" href="styles/footer.css">
+
+  <script>
+    function setImageHeight() {
+        document.querySelectorAll(".sectionTwo").forEach(section => {
+            let textDiv = section.querySelector(".text");
+            let imageDiv = section.querySelector(".image");
+            console.log(textDiv.offsetHeight);
+            if (textDiv && imageDiv) {
+                let textHeight = textDiv.offsetHeight;
+                imageDiv.style.maxHeight = textHeight + "px";
+            }
+        });
+    }
+
+    // Run on page load
+    window.addEventListener("load", setImageHeight);
+
+    // Run on window resize
+    window.addEventListener("resize", setImageHeight);
+  </script>
 </head>
 
 <body>
@@ -37,9 +57,9 @@
 
     <div class="middle-section">
       <a href="#section-one"><button id="homeButton" class="middle-button">Home</button></a>
-      <a href="#section-services"><button class="middle-button">Services</button></a>
+      <a href="#section-two"><button class="middle-button">Services</button></a>
       <a href="#section-three"><button class="middle-button">Partners</button></a>
-      <a href="#section-two"><button class="middle-button">About</button></a>
+      <a href="#section-four"><button class="middle-button">About</button></a>
     </div>
 
     <div class="right-section">
@@ -53,112 +73,119 @@
     <div class="translucent-background">
       <div class="texts">
         <h1 class="overlay-text">Promise Star Global Services LTD</h1>
-        <h6 class="overlay-text-two">We are a wholly Nigerian-owned engineering and technical services provider, specializing in Renewable Energy Technologies, industrial plants, and facilities</h6>
-        <a href="#section-services"><button class="section-one-button">Learn more</button></a>
+        <h6 class="overlay-text-two">We are a wholly Nigerian-owned engineering and technical services provider, specializing in Renewable Energy Technologies, industrial plants, and facilities.</h6>
+        <a href="#section-two"><button class="section-one-button">Learn more</button></a>
       </div>
     </div>
   </div>
 
-  <div id="section-services" class="demo-div"></div>
-
-  <div>
+  <div class="heading-div" id="section-two">
     <h2 class="heading">
       Services
     </h2 style="text-align">
+    <h6 class="sub-heading">Promise Star Global Services offers a wide range of technical and engineering services that are tailored to meet the unique requirements of industrial facilities and infrastructure projects.</h6>
   </div>
-  <div class="section-services">
-    <div class="section-services-left">
-      <img src="icons/industry.JPG">
-      <div class="list-div">
-        <h1>
-          Oil & Gas Plants
-        </h1>
-        <!-- <h1>Services</h1> -->
-        <p>Welding, Painting & Fabrications</p>
-        <p>Scaffolding & Procurement Services</p>
-        <p>Hydrostatic & Leak Testing</p>
-        <p>Pipeline Services </p>
-        <p>Torquing, Tensioning & Flange Management</p>
-        <p>Inspections</p>
-        <p>NDE (Non-Destructive Examination) Testing</p>
+
+  <div style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+    <div class="sectionTwo">
+      <div class="image">
+          <img src="icons/renewable.jpg" alt="Renewable Energy">
+      </div>
+      <div class="text">
+          <h2>Renewable Energy Services</h2>
+          <ul>
+              <li>Engineering Design & Consultancy</li>
+              <li>Renewable Energy Installations & Maintenance (Solar, Geothermal, Hydro)</li>
+              <li>Technical Support & Training</li>
+              <li>Electrical Installations</li>
+              <li>Sustainable Energy Solutions</li>
+              <li>Energy Efficiency</li>
+              <li>CAES Technology Installations</li>
+          </ul>
       </div>
     </div>
 
-    <div class="section-services-middle">
-      <img src="icons/solar.jpg">
-      <div class="list-div">
-        <h1>
-          Renewable Energy
-        </h1>
-        <!-- <h1>Services</h1> -->
-        <p>Engineering Design & Consultancy</p>
-        <p>Renewable Energy Installations & Maintenance Services</p>
-        <p>Technical Support & Training</p>
-        <p>Electrical Installations</p>
-        <p>Sustainable Energy Solutions</p>
-        <p>Energy Efficiency</p>
-        <p>CAES Technology Installations</p>
+    <div class="sectionTwo reverse">
+      <div class="image">
+          <img src="icons/oilgas.jpg" alt="Oil and Gas Services">
       </div>
-    </div>
-
-    <div class="section-services-right">
-      <img src="icons/solar.jpg">
-      <div class="list-div">
-        <h1>
-          Industries We Serve
-        </h1>
-        <p>Renewable Energy Sources</p>
-        <p>Oil & Gas</p>
-        <p>Mining</p>
-        <p>Industrial Plants</p>
+      <div class="text">
+          <h2>Oil & Gas Plant Services</h2>
+          <ul>
+              <li>Welding & Fabrications</li>
+              <li>Painting</li>
+              <li>Scaffolding</li>
+              <li>Procurements</li>
+              <li>Hydrostatic & Leak Testing</li>
+              <li>Pipeline Pigging, Drying & Purging</li>
+              <li>Torquing & Tensioning</li>
+              <li>Flange Management</li>
+              <li>NDE Testing</li>
+              <li>Pipeline Pre-commissioning & Inspection</li>
+              <li>Tank & Structural Integrity Inspection</li>
+              <li>Coating & Heat Exchanger Inspection</li>
+          </ul>
       </div>
     </div>
   </div>
 
-  <div id="section-three" class="demo-div"></div>
+  <div class="spacing" style="height: 20px;"></div>
+  <div class="heading-div" id="section-three">
+    <h2 class="heading">
+      Our Technical Partners
+    </h2 style="text-align">
+  </div>
 
-  <div class="section-two block">
-    <div class="heading-div">
-      <p class="heading">Our Technical partners</p>
-    </div>
-    <div class="div-center">
-      <div class="section-two-grid">
-        <img class="image section-two-image" src="icons/seec.png" alt="Wind Turbine Image">
-        <img class="image section-two-image" src="icons/godwyn.png" alt="Wind Turbine Image">
-        <img class="image section-two-image" src="icons/ttt.png" alt="Wind Turbine Image">
-        <img class="image section-two-image" src="icons/bogerhaus.png" alt="Wind Turbine Image">
-      </div>
+  <div class="section-three">
+    <div class="image-container">
+      <img class="image" src="icons/seec.png" alt="Wind Turbine Image">
+      <img class="image" src="icons/godwyn.png" alt="Wind Turbine Image">
+      <img class="image" src="icons/ttt.png" alt="Wind Turbine Image">
+      <img class="image" src="icons/bogerhaus.png" alt="Wind Turbine Image">
+      <!-- Duplicate images for infinite scroll -->
+      <img class="image" src="icons/seec.png" alt="Wind Turbine Image">
+      <img class="image" src="icons/godwyn.png" alt="Wind Turbine Image">
+      <img class="image" src="icons/ttt.png" alt="Wind Turbine Image">
+      <img class="image" src="icons/bogerhaus.png" alt="Wind Turbine Image">
     </div>
   </div>
 
-  <div id="section-two" class="demo-div"></div>
+  <div class="spacing" style="height: 20px;"></div>
 
+  <div class="heading-div" id="section-four">
+    <h2 class="heading">
+      About Us
+    </h2 style="text-align">
+  </div>
   <div class="section-four block">
-    <p class="heading">About Us</p>
     <div class="section-four-grid">
       <div class="section-four-grid-child child-one">
         <h2>Vision</h2>
-        <p>Embracing AI and automation, focusing on customer satisfaction, adhering to ethical and environmental
-          standards, and promoting merit-based rewards for continuous growth and excellence.</p>
+        <p>
+          Our vision is to push the boundaries of what is possible, setting new standards in design, 
+          safety, and efficiency, and creating a positive impact on society through advanced engineering practices.</p>
       </div>
       <div class="section-four-grid-child child-three">
         <h2>Mission Statement</h2>
         <p>
           Our companies aim to provide value through precision engineering, sustainable practices, and
           customer-focused approaches, enhancing safety, efficiency, and functionality across projects in Africa and
-          beyond</p>
+          beyond.</p>
       </div>
       <div class="section-four-grid-child child-two">
         <h2>Position in the Market</h2>
-        <p>Our companies aim to provide value through precision engineering, sustainable practices, and
-          customer-focused approaches, enhancing safety, efficiency, and functionality across projects in Africa and
-          beyond</p>
+        <p>
+          As a solutions provider with a strong foothold in the West African market, our local knowledge, combined 
+          with our global expertise, allows us to navigate the unique challenges of the region while providing tailored, 
+          high-quality solutions that meet international standards.</p>
       </div>
       <div class="section-four-grid-child child-four">
         <h2>Commitment to Sustainability</h2>
-        <p>Our companies aim to provide value through precision engineering, sustainable practices, and
-          customer-focused approaches, enhancing safety, efficiency, and functionality across projects in Africa and
-          beyond</p>
+        <p>
+          we are committed to contributing to the development of a greener and more sustainable future. Our energy solutions 
+          focus on reducing carbon footprints, providing a sustainable solution to our oil and gas sectors and promoting the 
+          use of renewable energy sources in industrial facilities.
+        </p>
       </div>
     </div>
   </div>
@@ -214,17 +241,6 @@
       <a href="#section-services"><button class="footer-button">Services</button></a>
       <a href="#section-three"><button class="footer-button">Partners</button></a>
       <a href="#section-two"><button class="footer-button">About</button></a>
-    </div>
-
-    <div class="footer-child">
-      <div class="footer-child">
-        <p class="child-heading">Socials</p>
-        <a class="links" href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-        <a class="links" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a>
-        <a class="links" href="https://x.com" target="_blank" rel="noopener noreferrer">Twitter</a>
-        <a class="links" href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a>
-        
-      </div>
     </div>
 
     <div class="footer-child">

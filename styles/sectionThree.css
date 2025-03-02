@@ -1,27 +1,28 @@
 .section-three {
-  margin-top: 60px;
-  height: auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr ;
-  row-gap: 20px;
-  column-gap: 20px;
+  --imageWidth: clamp(200px, 40vw, 400px); /* Sets the width of the images */
+  width: 100%;
+  overflow: hidden; /* Hides the overflowing images */
+  border: 1px solid rgb(213, 213, 213);
 }
 
-.section-three-child{
-  padding: 20px;
-  background-color: rgb(235, 235, 235);;
-  height: 300px;
-  flex-shrink: 0;
-  box-sizing: border-box;
-  border-radius: 20px;
-  transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), 
-  background-color 0.3s ease, 
-  box-shadow 0.3s ease;
+.image-container {
+  --imageGap: 10%; /* Adjust the gap between images */
+  display: flex;
+  gap: var(--imageGap); /* Adjust the gap between images */
+  animation: scroll 25s linear infinite; 
 }
 
-.section-three-child:hover {
-  transform: scale(0.98); /* Makes the div slightly smaller */
-  background-color: rgb(245, 245, 245); /* Slightly lighter background */
-  box-shadow: inset 1px 4px 20px rgba(0, 0, 0, 0.2); /* Inset shadow from all sides */
+.section-three .image {
+  width: var(--imageWidth); /* Ensures all images take up equal space */
+  object-fit: contain; /* Ensures images fit well within the allocated width */
 }
 
+/* Animation for scrolling effect */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX( calc( -4*var(--imageWidth) - 4*var(--imageGap))); /* Moves the images left by 33.33% of their width */
+  }
+}
