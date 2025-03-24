@@ -9,22 +9,17 @@
   background-color: rgb(232, 232, 232);
   z-index: 100;
   align-items: center;
+  box-shadow: 0 2px 4px rgba(72, 72, 72, 0.5);
+  font-family: sans-serif;
+  border-bottom: 2px solid rgb(126, 126, 126);
 }
 
 .left-section{
-  /* background-color: lightblue; */
-  margin-left: 10px;
-  width: 180px;
-
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+  margin-left: 30px;
 }
 
 .logo {
-  height: 70px;
-  margin-top: 10px;
-  transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), background-color 0.3s ease;
+  height: 3.5rem;
 }
 
 .logo:hover{
@@ -39,50 +34,45 @@
 .middle-section{
   margin: 0 10px; /* Space out buttons */
   opacity: 1;
-  transition: opacity 0.29s ease; /* Smooth fade transition */
+  height: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Hide buttons when screen width is below 768px */
 @media (max-width: 768px) {
-  .middle-section button {
-    opacity: 0; /* Fade out the buttons */
+  .middle-section {
+    display: none;
     pointer-events: none; /* Optional: Disable button interactions */
+  }
+  .left-section {
+    margin-left: 15px;
   }
 }
 
 .middle-button{
-  margin-left: 5px;
-  margin-right: 5px;
+  height: 100%;
   font-weight: bold;
-  font-size: 12px;
-  height: 34px;
-  padding-left: 15px;
-  padding-right: 15px;
-  color: black;
-  background-color: rgb(240, 240, 240);
-  border: none;
-  border-radius: 17px;
-  transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), background-color 0.3s ease;
+  font-size: 18px;
+  padding-inline: 20px;
+  text-decoration: none;
+  color: rgb(41, 41, 41);
+  transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), background-color 0.5s ease, font-size 0.5s ease;
+  display: flex;
+  align-items: center;
 }
 
 .middle-button:hover {
   /* color: black; */
-  /* background-color: rgb(230, 230, 230); */
-  transform: scale(1.1);
+  background-color: rgb(210, 210, 210);
 }
 
 .middle-button:active {
   color: black;
   background-color: rgb(220, 220, 220);
-  transform: scale(1.13);
-  transform: scale(1);
 }
-
-/* .middle-button:active {
-  color: rgb(255, 255, 255);
-  background-color: rgb(0, 0, 0);
-  transform: scale(1.05);
-} */
 
 .right-section{
   /* background-color: lightblue; */
