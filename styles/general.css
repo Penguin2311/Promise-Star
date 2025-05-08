@@ -7,7 +7,8 @@ p {
 body{
   margin: 0;
   margin-left: 0px;
-  background: linear-gradient(to bottom, #eef2f3, #eef2f3);
+  background: #eef2f3;
+  font-family: sans-serif;
 }
 
 button{
