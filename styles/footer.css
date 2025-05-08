@@ -1,7 +1,7 @@
 .footer {
   margin-top: 60px;
   height: auto;
-  /* background: rgb(227, 227, 227); */
+  padding: 2rem 1rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
